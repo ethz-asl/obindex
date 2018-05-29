@@ -47,8 +47,3 @@ add_library(binaryindex
     src/Timer.cpp
     src/BinaryIndex.cpp)
 target_link_libraries(binaryindex ${OpenCV_LIBRARIES} ${FLANN_LIBRARIES})
-
-# BinaryIndex example
-add_executable(test_bindex
-    src/demo/example.cpp)
-target_link_libraries(test_bindex binaryindex ${OpenCV_LIBRARIES} ${FLANN_LIBRARIES} ${Boost_LIBRARIES})
